@@ -9,14 +9,12 @@ app.use(express.static("public"));
 app.use(require("./routes/htmlRoutes"));
 app.use(require("./routes/apiRoutes"));
 
-db.connect(
-    process.env.MONGODB_URI || "mongodb://localhost/workout",
-    {
-        useFindAndModify: false,
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useCreateIndex: true,
-    });
+db.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false,
+});
 
 app.listen(PORT, () => {console.log(`App listening on PORT ${PORT}`)});
 

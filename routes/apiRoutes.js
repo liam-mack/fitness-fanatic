@@ -1,6 +1,8 @@
 const router = require("express").Router();
 const tracker = require("../models/tracker.js");
 
+// Import database model and perform GET, POST, & PUT requests with the data
+
 router.get("/api/workouts", (req, res) => {
     tracker.find().then(results => res.json(results))
     .catch(err => res.json(err));

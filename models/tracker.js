@@ -1,7 +1,7 @@
 const db = require("mongoose");
 const { Schema } = db;
 
-
+// Lay out fitness tracker schema for noSQL database
 const trackerSchema = new Schema({
   day: {
     type: Date,
@@ -74,6 +74,7 @@ const trackerSchema = new Schema({
     }
 });
 
+// Update trackerSchema with virtual data not found within MongoDB
 trackerSchema.virtual("totalDuration").get(function() {
     return this.exercises.reduce((total, exercise) => {
       return total + exercise.duration;

@@ -1,3 +1,5 @@
+// Express html routes to handle view rendering
+
 const path = require("path");
 const router = require("express").Router();
 

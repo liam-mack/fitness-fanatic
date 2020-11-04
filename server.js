@@ -10,7 +10,7 @@ app.use(require("./routes/htmlRoutes"));
 app.use(require("./routes/apiRoutes"));
 
 db.connect(
-    process.envMONGODB_URI || "mongodb://localhost/workout",
+    process.en.MONGODB_URI || "mongodb://localhost/workout",
     {
         useFindAndModify: false,
         useNewUrlParser: true,

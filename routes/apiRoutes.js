@@ -13,7 +13,7 @@ router.get("/api/workouts/range", (req, res) => {
 });
 
 router.post("/api/workouts", (req, res) => {
-    tracker.create().then(results => res.json(results))
+    tracker.create({}).then(results => res.json(results))
     .catch(err => res.json(err));
 });
 

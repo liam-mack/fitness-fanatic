@@ -5,7 +5,8 @@ const { Schema } = db;
 const trackerSchema = new Schema({
   day: {
     type: Date,
-    default: Date.now,
+    required: true,
+    default: () => Date.now(),
   },
   exercises: [
     {

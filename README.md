@@ -35,7 +35,7 @@
 >Unlicense
 
 ## Deployment
-Live Recording?: No  
+https://personal-fitness-logger.herokuapp.com/
 
 Screenshot?: Yes
 ![](images/Deployed.png)

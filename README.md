@@ -14,7 +14,7 @@
 > - [Questions](#Questions)
 
 ## Description
->Personal fitness tracking app persisted with MongoDB
+>Personal fitness tracking app with data persisted through MongoDB
 
 ## Keywords
 >*MongoDB, NodeJS, Mongoose, Express*
